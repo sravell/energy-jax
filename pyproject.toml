@@ -1,0 +1,62 @@
+[project]
+name = "energax"
+version = "0.3.1"
+description = "Energy Based Models (EBMs) in JAX"
+authors = [{ name = "Extropic AI", email = "owen@extropic.ai" }]
+keywords = ["energy-based-models", "machine-learning", "jax"]
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Development Status :: 2 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: Science/Research",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Scientific/Engineering :: Mathematics",
+]
+urls = {repository = "https://github.com/extropic-ai/energax" }
+
+dependencies = [
+    "jax>0.4.16",
+    "jaxlib>0.4.16",
+    "jaxtyping>0.2.23",
+    "equinox>0.11.2",
+    "blackjax>1.1.0",
+    "optax>0.1.4",
+    "networkx>2.8.8",
+    "seaborn>0.13.0",
+    "chex>0.1.85",
+    "diffrax>0.5.0",
+]
+
+[project.optional-dependencies]
+examples = [
+    "pytest==7.2.0",
+    "nbmake==1.4.3",
+    "matplotlib>=3.6.2",
+    "scikit-learn>=1.1.3",
+    "tqdm>=4.64.1",
+    "tensorflow-datasets>=4.9.0",
+    "tensorflow==2.17.0",
+    "tensorflow-io-gcs-filesystem==0.37.1",
+    "urllib3==2.2.1",
+]
+testing = [
+    "absl-py==1.3.0",
+    "autoflake==2.2.1",
+    "black==24.4.2",
+    "coverage==7.3.2",
+    "mypy==1.10.0",
+    "pre-commit>=3.5.0",
+    "pydocstyle==6.2.3",
+    "pylint==2.17.4",
+    "pytest==7.2.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
