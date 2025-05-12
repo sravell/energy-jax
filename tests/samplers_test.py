@@ -3,8 +3,8 @@
 from absl.testing import absltest
 from jax import numpy as jnp
 import jax
-from energax.ebms import ebm
-from energax.sampling import (
+from energy_jax.ebms import ebm
+from energy_jax.sampling import (
     LangevinSampler,
     HMCSampler,
     ContinuousReplayBuffer,

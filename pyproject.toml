@@ -1,5 +1,5 @@
 [project]
-name = "energax"
+name = "energy-jax"
 version = "0.3.1"
 description = "Energy Based Models (EBMs) in JAX"
 authors = [{ name = "Extropic AI", email = "owen@extropic.ai" }]
@@ -18,7 +18,7 @@ classifiers = [
     "Topic :: Scientific/Engineering :: Information Analysis",
     "Topic :: Scientific/Engineering :: Mathematics",
 ]
-urls = {repository = "https://github.com/extropic-ai/energax" }
+urls = {repository = "https://github.com/extropic-ai/energy-jax" }
 
 dependencies = [
     "jax>0.4.16",

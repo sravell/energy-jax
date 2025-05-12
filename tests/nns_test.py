@@ -4,8 +4,8 @@ from absl.testing import absltest
 from jax import numpy as jnp
 import jax
 import equinox as eqx
-from energax.ebms import nn_ebms
-from energax import nns
+from energy_jax.ebms import nn_ebms
+from energy_jax import nns
 
 
 class EBMTest(absltest.TestCase):

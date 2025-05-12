@@ -4,7 +4,7 @@ from jax import numpy as jnp
 from jax import flatten_util
 import equinox as eqx
 from equinox.nn import MLP
-from energax.optimizers import (
+from energy_jax.optimizers import (
     calculate_natural_gradient,
     fisher_metric,
     ngd_constructor_full_metric,

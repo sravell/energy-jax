@@ -3,7 +3,7 @@ import unittest
 import numpy as np
 from jax import numpy as jnp
 import jax
-from energax import utils
+from energy_jax import utils
 
 
 def _get_domain(structure):
@@ -13,13 +13,13 @@ def _get_domain(structure):
 class UtilTests(unittest.TestCase):
     def test_softmax(self):
         array = jnp.array([-1.0, 0.0, 1.0, 100.0, 1000.0])
-        energax_sm, _ = utils.stable_softmax(array)
+        energy_jax_sm, _ = utils.stable_softmax(array)
         jax_sm = jax.nn.softmax(array)
-        self.assertTrue(jnp.allclose(energax_sm, jax_sm))
+        self.assertTrue(jnp.allclose(energy_jax_sm, jax_sm))
 
         jit_sm = jax.jit(utils.stable_softmax)
-        energax_sm, _ = jit_sm(array)
-        self.assertTrue(jnp.allclose(energax_sm, jax_sm))
+        energy_jax_sm, _ = jit_sm(array)
+        self.assertTrue(jnp.allclose(energy_jax_sm, jax_sm))
 
     def test_get_domain(self):
         for i in range(5):

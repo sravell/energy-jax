@@ -3,9 +3,9 @@
 from absl.testing import absltest
 from jax import numpy as jnp
 import jax
-from energax import losses
-from energax.ebms.nn_ebms import ContinuousNNEBM
-from energax import nns
+from energy_jax import losses
+from energy_jax.ebms.nn_ebms import ContinuousNNEBM
+from energy_jax import nns
 import equinox as eqx
 
 

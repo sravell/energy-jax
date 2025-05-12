@@ -12,7 +12,7 @@ chex.set_n_cpu_devices(_NUM_CPU_DEVICES)
 import jax
 from jax import numpy as jnp
 import equinox as eqx
-from energax.sampling import (
+from energy_jax.sampling import (
     LangevinSampler,
     update_buffer,
     ContinuousReplayBuffer,

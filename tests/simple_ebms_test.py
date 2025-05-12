@@ -5,9 +5,9 @@ from jax import numpy as jnp
 import jax
 import networkx as nx
 import equinox as eqx
-from energax.ebms import simple_ebms
-from energax.sampling.discrete import DiscreteUniformMH, DiscreteHammingMH
-from energax.sampling.continuous import (
+from energy_jax.ebms import simple_ebms
+from energy_jax.sampling.discrete import DiscreteUniformMH, DiscreteHammingMH
+from energy_jax.sampling.continuous import (
     LangevinSampler,
     HMCSampler,
     ErrorAdaptiveLangevinSampler,

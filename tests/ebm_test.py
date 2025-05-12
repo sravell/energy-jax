@@ -4,8 +4,8 @@
 from absl.testing import absltest
 import jax
 from jax import numpy as jnp
-from energax.ebms import ebm
-from energax.sampling import continuous
+from energy_jax.ebms import ebm
+from energy_jax.sampling import continuous
 
 
 class FunctionalEBMTests(absltest.TestCase):

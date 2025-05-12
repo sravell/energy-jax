@@ -4,8 +4,8 @@ from absl.testing import absltest
 from jax import numpy as jnp
 import jax
 import equinox as eqx
-from energax.ebms import rbms
-from energax.sampling.discrete import CRBMGibbsSampler
+from energy_jax.ebms import rbms
+from energy_jax.sampling.discrete import CRBMGibbsSampler
 
 
 class CRBMTests(absltest.TestCase):
